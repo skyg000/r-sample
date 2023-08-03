@@ -1,0 +1,51 @@
+header {
+  width: 100%;
+  height: 20vh;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+header nav a::after {
+  content: " | ";
+  margin: 25px;
+}
+header nav a:nth-child(2)::after {
+  display: none;
+}
+
+main {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .con {
+  display: flex;
+  position: absolute;
+  top: 40%;
+}
+main .con ul {
+  display: flex;
+}
+main .con ul li {
+  list-style: none;
+  text-align: center;
+}
+main .con ul li img {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 50%;
+}/*# sourceMappingURL=App.css.map */

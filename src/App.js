@@ -26,7 +26,7 @@ function App() {
         <header>
           <nav className='menu'>
             <Link to="/">Home</Link>
-            <Link to="/Product">Product</Link>
+            <Link to="/Product">Product </Link>
             <Link to="/Product_b">Product_b</Link>
             <Link to="/Param Item/code:1000">Param Item</Link>
           </nav>

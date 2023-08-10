@@ -1,20 +1,21 @@
 import React from 'react'
+import Item from './Item'
 
-function Prouduct() {
+
+function Prouduct({data}) {
+    
     return (
         <>
-        <h2>React State & Props</h2>
-        <div className='con'>
-            <ul>
-                <li>
-                    <img src="../16.jpg"/>
-                    <p>짱구</p>
-                </li>
-                <li>
-                    <img src="../15.jpg"/>
-                    <p>맹구</p>
-                </li>
-            </ul>
+        <h2>Product</h2>
+        <div>
+            {
+                /* data.map(function(){
+                    return
+                }) */
+                data.map((item,k)=>(
+                <Item key={item.id} item={item}/>
+                ))
+            }
         </div>
         </>
     )
